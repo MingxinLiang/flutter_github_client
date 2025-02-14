@@ -7,7 +7,6 @@ import 'package:flutter_github_client/models/cache_config.dart';
 import 'package:flutter_github_client/models/user.dart';
 
 Profile proFileFromJson(String str) => Profile.fromJson(json.decode(str));
-
 String proFileToJson(Profile data) => json.encode(data.toJson());
 
 class Profile {

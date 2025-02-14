@@ -20,7 +20,7 @@ class Global {
   static late SharedPreferences? _prefs;
   static Profile profile = Profile();
 
-  // TODO: 网络缓存对象
+  // 网络缓存对象
   static NetCache netCache = NetCache();
 
   // 主题列表
@@ -47,7 +47,7 @@ class Global {
     // 缓存策略
     profile.cache = CacheConfig(enable: true, maxAge: 3600, maxCount: 100);
 
-    // TODO: 网络请求相关配置
+    // git网络请求相关配置
     Git.init();
   }
 
