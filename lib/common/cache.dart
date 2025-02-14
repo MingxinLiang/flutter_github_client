@@ -52,7 +52,7 @@ class NetCache extends Interceptor {
       var ob = cache[key];
       if (ob != null) {
         // 判断缓存时间
-        if ((DateTime.now().millisecondsSinceEpoch - ob.timeStamp) / 1000 <
+        if ((DateTime.now().millisecondsSinceEpoch - ob.timeStamp!) / 1000 <
             Global.profile.cache!.maxAge) {
           return handler.resolve(ob.response!);
         } else {

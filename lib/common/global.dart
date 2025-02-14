@@ -5,6 +5,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../models/profile.dart';
 import '../models/user.dart';
 import '../models/cache_config.dart';
+import 'package:flutter_github_client/common/git.dart';
+import 'package:flutter_github_client/common/cache.dart';
 
 const _themes = <MaterialColor>[
   Colors.blue,
